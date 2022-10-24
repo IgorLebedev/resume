@@ -7,66 +7,77 @@
     <meta name="keywords" content="Cv, resume, igor, lebedev, Игорь, Лебедев">
     <meta name="description" content="Сайт на котором размещено резюме Игоря Лебедева">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="img resume.jpg" width="300" alt="Картинка сломалась">
+    <div class="container">
+        <header class="header"><img src="img resume.jpg" width="300" alt="Картинка сломалась" class="img">
 
-    <h1>Игорь Лебедев</h1>
+            <div class="card aboutwithname"><h1>Игорь Лебедев</h1>
+        <div class="paragraph about">
+            <p>Я учусь <strong>javascript, html и css</strong>. В будущем стану <strong><em>web frontend developer</em></strong>.</p>
 
-    <p>Я учусь <strong>javascript, html и css</strong>. В будущем стану <strong><em>web frontend developer</em></strong>.</p>
+            <p>Люблю <em>путешествовать, смотреть фильмы, изучать новое</em></p>
+        </div>
+        </div></header>
 
-    <p>Люблю пить <em>пиво, путешествовать, смотреть фильмы, изучать новое</em></p>
+        <div class= "other hobbies"><h2>Мои хобби:</h2>
+            <ul class="list">
+                <li>Компьютерные игры</li>
+                <li>Путешествия</li>
+                <li>Горные лыжи</li>
+                <li>Программирование</li>
+            </ul>
+        </div>
 
-    <h2>Мои хобби:</h2>
-    <ul>
-        <li><em>Компьютерные игры</em></li>
-        <li><em>Путешествия</em></li>
-        <li><em>Горные лыжи</em></li>
-        <li><em>Программирование</em></li>
-    </ul>
+        <div class= "card experience">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th>Название</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Компания МИР</td>
+                    <td>Оператор станка с ЧПУ</td>
+                    <td>2018-2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <h2>Опыт работы</h2>
-    <table width="400">
-        <thead>
-            <tr>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <td>Компания МИР</td>
-            <td>Оператор станка с ЧПУ</td>
-            <td>2018-2022</td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="other social-network"><h3><strong>Мои социальные сети:</strong></h3>
+            <a href="https://www.instagram.com/young_igor/"  target="_blank">INSTAGRAM</a> |
+            <a href="https://vk.com/young_igor" target="_blank">VK</a> | 
+            <a href="https://t.me/igor_lebedevv" target="_blank">TELEGRAM</a>
+        </div>
 
-    <h3><strong>Мои социальные сети:</strong></h3>
-    <a href="https://www.instagram.com/young_igor/"  target="_blank">INSTAGRAM</a> |
-    <a href="https://vk.com/young_igor" target="_blank">VK</a> | 
-    <a href="https://t.me/igor_lebedevv" target="_blank">TELEGRAM</a>
+        <div class="card contact">
+        <form action="/" class="form">
+            <h3>Связаться со мной</h3>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя">
+        </div>
 
-    <h3>Связаться со мной</h3>
-    <form action="/">
-    <div>
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" placeholder="Введите имя">
+        <div class="form-group">
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="Введите email">
+        </div>
+    </div>    
+
+        <div class="form-group">
+            <label for="message">Ваше сообщение:</label>
+            <textarea type="message" id="message" placeholder="Введите сообщение" cols="20" rows="8"></textarea>
+        <button type="submit" class="btn">Отправить</button>
+        </div>
+        </div>
+        </form>
     </div>
-
-    <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
-
-    <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea type="message" id="message" placeholder="Введите сообщение" cols="20" rows="8"></textarea>
-        <br>
-    <button type="submit">Отправить</button>
-    </div>
-    </form>
 </body>
 </html>
