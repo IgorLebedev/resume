@@ -2,4 +2,4 @@
 
 ### Result you can see here
 
-[My first css+html work] (https://igorlebedev.github.io/resume/).
+[My first css+html work](https://igorlebedev.github.io/resume/).
